@@ -30,10 +30,10 @@ Add an if-else statement to your setHomeAddress() function so that when the chec
 	   function setHomeAddress(){
       console.log("Yep, my function is being called");
       var box = document.querySelector('#useBilling');
-
       var bill = document.querySelector("#bill");
       console.log(bill.value);
       var home = document.querySelector('#home');
+      home.value = "";
       if (box.checked) {
         home.value = bill.value;
         home.disabled = true;
